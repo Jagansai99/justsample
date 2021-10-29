@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.blocks{position: absolute;
+		top:110px;
+		width: 100%;
+		display: block;
+		float: left;
+		height: 100%;
+	}
+
+	.row1{width: 20%;
+          display: block;
+          float:left;
+          background-color: bisque;
+          color: bisque;
+	     }
+
+	.row2{
+		display: block;
+		float:left;
+		width: 60%;
+		height:50%;
+		background-color: silver;
+		font-size: 2.5em;
+		text-align: center;
+		padding-top: 100px;
+		color: white;
+
+	}
+
+	.row2 span .mount{color: red;}
+    .row2 span.color{color:red;}
+    .row2 span.color2{color:red;}
+    .row2 span.color3{color:red;}
+
+   .row2 span.none{ animation: blink 1s linear infinite;}
+
+   @keyframes blink{
+   	             0%{opacity: 10;}
+                 50%{opacity: .1;} 
+                 100%{opacity: 1;}
+   }
+
+
+	.row3{
+		width: 20%;
+		display: block;
+		float:left;
+		background-color: bisque;
+		color: bisque;
+	}
+</style>
+	<h1 style="font-size:3em; text-align:center; background-color:cyan; color:darkred ">SCRIPT PRACTICE</h1>
+
+</head>
+<body style="background-color: bisque;">
+	<div class="blocks" id="blink">
+		   <div class="row1">....</div>
+	       <div class="row2"><marquee behaviour="scroll" height=200px; direction="up" scrollamount=5><span class="none"><span class="mount"> F</span>UNDAMENTALS<span class="color"> O</span>F<span class="color2"> J</span>AVA<span class="color3"> S</span>CRIPT</span></marquee></div>
+	       <div class="row3">.......</div>
+	</div>       
+	<script>
+
+		 //1//
+
+// 	var age=1998;
+// 	let century;
+// 	if (age>=2000){
+// 		century=20;
+		
+// 	}
+// 	else{
+// 		century=21
+		
+// 	}
+// 	console.log(century);
+
+//        // 2//
+
+// let n='1'+1;
+// n=n-1;
+// console.log(n);
+
+//      //3//
+
+// const gage='18';
+// if(gage===18)console.log('jagan is an adult');
+// if(gage==18)console.log('jagan is not an adult');
+
+
+
+//  const greatest=number(prompt('what is your greatest no.'));
+//  console.log(greatest);
+
+// console.log(typeof greatest);
+
+
+// if(greatest==22)console.log('it is a greatest no.')//'22'==22
+// if(greatest===22)console.log(greatest)
+
+
+//   //4//
+
+// const and=true;
+// const band=true;
+// console.log(and && band);
+// console.log(and || band);
+
+// if(and&&band){
+// 	console.log('jagan has good skills');
+// }
+// else if(and||band){
+// 	console.log('jaga doenot have skilss')
+// }
+
+    //5//
+
+
+// var day='sunday';
+
+// switch(day){
+// 	case 'monday':
+// 	console.log('maths class');
+// 	break;
+
+// 	case 'tuesday':
+// 	console.log('sciece class');
+// 	break;
+
+// 	case 'wednesday':
+// 	case 'thursdy':
+// 	console.log('biology class');
+// 	break;
+
+// 	case 'friday':
+// 	console.log('telugu class');
+// 	break;
+
+// 	case 'saturday':
+// 	console.log('play day');
+
+// 	case 'sunday':
+// 	console.log('holiday');
+// 	break;
+// }
+
+
+   //using if else statement//
+
+//    const day='wednesday'
+
+//    if(day==='monday'){
+//    	console.log('jagan day');
+//    }
+//    else if(day==='tuesday'){
+//    	console.log('sunny day');
+//    }
+//    else if(day==='wednesday'){
+//    	console.log('no day today');
+//    }
+//    const ok='ok';
+// if(ok==='ok'){
+	
+// 	confirm('23 is  bigger');
+// 	console.log('you clicked ok');
+// }
+// else if (cancel=='cancel'){console.log('you clicked cancel');
+//  }
+
+   //Functions//
+
+// logger();
+
+// function logger(){
+// 	console.log('my name is jagan');
+// }
+
+// logger();
+
+
+// function fruitProcessor (apples,oranges){
+// 	console.log(apples,oranges);
+// 	const juice='juice with ${apples} and ${oranges}';
+// 	return juice;
+// }
+// const juice=fruitProcessor(5,0);
+// console.log(juice);
+
+var g=String('34');
+console.log(typeof g);
+
+
+    //Function Declaration//
+
+function calcAge1(birthyear){
+   
+   return 2037-birthyear;
+}
+ 
+ const age1=calcAge1(1991);
+ console.log(age1);
+ console.log(typeof age1);
+
+
+    //Function Expression//
+
+ var calcAge2=function(birthyear){
+ 	return 2037-birthyear;
+ }
+
+ const age2=calcAge2(1991);
+ console.log(age2 ,age1);
+
+
+   //Arrow Function//
+
+ var calcAge3=birthyear=>2031-birthyear;
+ var age3=calcAge3(1991);
+ console.log(age3);
+
+
+ const yearsUntillretirement=birthyear=>{
+ 	const age=2037-birthyear;
+ 	const retirement=65-age;
+ 	console.log(age,retirement);
+ 	return retirement;
+
+ }
+ console.log(yearsUntillretirement(1991));
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>	
+
+
+</body>
+</html>
+
+
